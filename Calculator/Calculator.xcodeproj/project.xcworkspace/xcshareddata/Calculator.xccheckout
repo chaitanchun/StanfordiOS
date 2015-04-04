@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A291430C-8414-4F4B-A312-5C3CFA4E9F36</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Calculator</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F85F5339E6FEAF8D852E5CEE6021269B6677E793</key>
+		<string>https://github.com/chaitanchun/StanfordiOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Calculator/Calculator.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F85F5339E6FEAF8D852E5CEE6021269B6677E793</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/chaitanchun/StanfordiOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F85F5339E6FEAF8D852E5CEE6021269B6677E793</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F85F5339E6FEAF8D852E5CEE6021269B6677E793</string>
+			<key>IDESourceControlWCCName</key>
+			<string>StanfordiOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
