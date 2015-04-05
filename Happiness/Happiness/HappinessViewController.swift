@@ -8,8 +8,8 @@
 
 import UIKit
 
-class HappinessViewController: UIViewController {
-    var happiness: Int = 50 {
+class HappinessViewController: UIViewController, FaceViewDataSource {
+    var happiness: Int = 10 {
         didSet {
             happiness = min(max(happiness, 0), 100)
             println("happiness = \(happiness)")
@@ -17,7 +17,17 @@ class HappinessViewController: UIViewController {
         }
     }
     
-    func updateUI() {
-        
+    @IBOutlet weak var faceView: FaceView! {
+        didSet {
+            faceView.dataSource = self
+        }
+    }
+    
+    func smilinessForFaceView(sender: FaceView) -> Double? {
+        return Double(happiness - 50) / 50
+    }
+    
+    private func updateUI() {
+        faceView.setNeedsDisplay()
     }
 }
