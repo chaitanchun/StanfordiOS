@@ -13,6 +13,7 @@
 		3D3D811D1AD6E14000F72D9D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3D811C1AD6E14000F72D9D /* Images.xcassets */; };
 		3D3D81201AD6E14000F72D9D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D3D811E1AD6E14000F72D9D /* LaunchScreen.xib */; };
 		3D3D812C1AD6E14000F72D9D /* AutolayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3D812B1AD6E14000F72D9D /* AutolayoutTests.swift */; };
+		5D6D258F1AD7CB14006E23B5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6D258E1AD7CB14006E23B5 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		3D3D81251AD6E14000F72D9D /* AutolayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutolayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3D812A1AD6E14000F72D9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D3D812B1AD6E14000F72D9D /* AutolayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutolayoutTests.swift; sourceTree = "<group>"; };
+		5D6D258E1AD7CB14006E23B5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				3D3D81171AD6E14000F72D9D /* ViewController.swift */,
 				3D3D81191AD6E14000F72D9D /* Main.storyboard */,
+				5D6D258E1AD7CB14006E23B5 /* User.swift */,
 				3D3D811C1AD6E14000F72D9D /* Images.xcassets */,
 				3D3D81131AD6E14000F72D9D /* Supporting Files */,
 			);
@@ -214,6 +217,7 @@
 			files = (
 				3D3D81181AD6E14000F72D9D /* ViewController.swift in Sources */,
 				3D3D81161AD6E14000F72D9D /* AppDelegate.swift in Sources */,
+				5D6D258F1AD7CB14006E23B5 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +415,7 @@
 				3D3D81311AD6E14000F72D9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D3D81321AD6E14000F72D9D /* Build configuration list for PBXNativeTarget "AutolayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				3D3D81341AD6E14000F72D9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

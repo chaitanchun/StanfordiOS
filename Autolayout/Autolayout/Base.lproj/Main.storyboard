@@ -63,10 +63,26 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qd3-3O-Qmj">
                                 <rect key="frame" x="16" y="104" width="161" height="30"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="700" image="xvim-rounded-corners" translatesAutoresizingMaskIntoConstraints="NO" id="pKD-Gd-Ekg">
+                                <rect key="frame" x="16" y="142" width="512" height="438"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SB7-yj-8Ff">
+                                <rect key="frame" x="536" y="350" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Izi-Ny-mhI">
+                                <rect key="frame" x="536" y="409" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Qd3-3O-Qmj" firstAttribute="top" secondItem="Owx-aS-dSP" secondAttribute="top" id="0wx-6q-4XC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pKD-Gd-Ekg" secondAttribute="bottom" constant="20" id="2Gb-54-pf9"/>
                             <constraint firstItem="Qd3-3O-Qmj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4OB-dS-d31"/>
                             <constraint firstItem="cjx-Pi-EXO" firstAttribute="bottom" secondItem="aqe-XV-tOE" secondAttribute="bottom" id="5Bb-CK-GDR"/>
                             <constraint firstItem="hy5-Lq-hjJ" firstAttribute="leading" secondItem="l5F-2u-xDM" secondAttribute="trailing" constant="8" symbolic="YES" id="7m9-AE-95H"/>
@@ -82,12 +98,14 @@
                             <constraint firstItem="ex3-u4-1Oo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="UfO-Kw-D8M"/>
                             <constraint firstItem="Owx-aS-dSP" firstAttribute="leading" secondItem="Qd3-3O-Qmj" secondAttribute="trailing" constant="8" symbolic="YES" id="XOt-zY-mhR"/>
                             <constraint firstItem="l5F-2u-xDM" firstAttribute="baseline" secondItem="hy5-Lq-hjJ" secondAttribute="baseline" id="YN3-yy-Hks"/>
+                            <constraint firstItem="pKD-Gd-Ekg" firstAttribute="top" secondItem="aqe-XV-tOE" secondAttribute="bottom" constant="8" symbolic="YES" id="YtD-C6-jNx"/>
                             <constraint firstItem="ex3-u4-1Oo" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="bhz-Dw-EWJ"/>
                             <constraint firstItem="hy5-Lq-hjJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ezd-BG-MI2"/>
                             <constraint firstItem="SF4-QD-jAX" firstAttribute="baseline" secondItem="ex3-u4-1Oo" secondAttribute="baseline" id="fQr-Rj-DYo"/>
                             <constraint firstItem="aqe-XV-tOE" firstAttribute="leading" secondItem="Owx-aS-dSP" secondAttribute="trailing" constant="78" id="iTb-L1-f63"/>
                             <constraint firstItem="l5F-2u-xDM" firstAttribute="width" secondItem="SF4-QD-jAX" secondAttribute="width" id="ncp-Ei-A6j"/>
                             <constraint firstItem="l5F-2u-xDM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wN5-gh-IwF"/>
+                            <constraint firstItem="pKD-Gd-Ekg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wVK-wD-C3z"/>
                             <constraint firstItem="SF4-QD-jAX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yTO-o8-cg1"/>
                         </constraints>
                     </view>
@@ -101,4 +119,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="xvim-rounded-corners" width="199" height="512"/>
+    </resources>
 </document>

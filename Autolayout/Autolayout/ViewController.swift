@@ -23,12 +23,19 @@ class ViewController: UIViewController {
         updateUI()
     }
     
+    var loggedInUser: User? {
+        didSet {
+            updateUI()
+        }
+    }
+    
     var secure: Bool = false {
         didSet {
             updateUI()
         }
     }
     @IBAction func login() {
+        loggedInUser = User.login(usernameField.text ?? "", password: passwordField.text ?? "")
     }
     
     private func updateUI() {
