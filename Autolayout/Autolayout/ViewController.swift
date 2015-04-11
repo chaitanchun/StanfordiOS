@@ -28,6 +28,10 @@ class ViewController: UIViewController {
             updateUI()
         }
     }
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var companyLabel: UILabel!
     
     var secure: Bool = false {
         didSet {
@@ -41,6 +45,21 @@ class ViewController: UIViewController {
     private func updateUI() {
         passwordField.secureTextEntry = secure
         passwordLabel.text = secure ? "Secured Password" : "Password"
+        nameLabel.text = loggedInUser?.name
+        companyLabel.text = loggedInUser?.company
+        imageView.image = loggedInUser?.image
+    }
+}
+
+extension User {
+    var image: UIImage? {
+        if let image = UIImage(named: login) {
+            return image
+            
+        } else {
+            return UIImage(named: "unknow_user")
+        }
+    
     }
 }
 
