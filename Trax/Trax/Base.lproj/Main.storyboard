@@ -1,43 +1,98 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YEk-CV-CYK">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="j3l-3W-az8">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Trax" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Lm1-eb-2gJ" customClass="GPXViewController" customModule="Trax" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="0PH-uL-md8"/>
+                        <viewControllerLayoutGuide type="bottom" id="HW9-Kn-t49"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="ice-KF-lds">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9kD-aQ-jnq">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="G1f-lF-wHC">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="9kD-aQ-jnq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1pk-53-PAf"/>
-                            <constraint firstAttribute="trailing" secondItem="9kD-aQ-jnq" secondAttribute="trailing" id="IZV-76-GqP"/>
-                            <constraint firstItem="9kD-aQ-jnq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" id="JhW-1E-DTI"/>
-                            <constraint firstItem="9kD-aQ-jnq" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="nGf-79-2lw"/>
+                            <constraint firstItem="G1f-lF-wHC" firstAttribute="bottom" secondItem="HW9-Kn-t49" secondAttribute="top" id="Gqq-P5-9hE"/>
+                            <constraint firstItem="G1f-lF-wHC" firstAttribute="top" secondItem="ice-KF-lds" secondAttribute="top" id="NFD-Of-a4M"/>
+                            <constraint firstItem="G1f-lF-wHC" firstAttribute="leading" secondItem="ice-KF-lds" secondAttribute="leading" id="YaZ-ch-o7C"/>
+                            <constraint firstAttribute="trailing" secondItem="G1f-lF-wHC" secondAttribute="trailing" id="qBk-cO-p1c"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="biP-rs-6Jb"/>
+                    <connections>
+                        <outlet property="mapView" destination="G1f-lF-wHC" id="3wT-55-CW5"/>
+                        <segue destination="Ihr-V0-R6H" kind="show" identifier="Show Image" id="4rm-gX-Oa6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PBx-Fq-ipC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1351" y="347"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="YeG-qO-fiz">
+            <objects>
+                <viewController id="Ihr-V0-R6H" customClass="ImageViewController" customModule="Trax" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jH8-wf-XND"/>
+                        <viewControllerLayoutGuide type="bottom" id="H9k-Od-6yr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r8O-St-EJ2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CS3-nn-7BO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </scrollView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Ids-bF-ZhR">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Ids-bF-ZhR" secondAttribute="centerY" id="4Up-YJ-V6s"/>
+                            <constraint firstItem="CS3-nn-7BO" firstAttribute="top" secondItem="r8O-St-EJ2" secondAttribute="top" id="a69-uD-Krx"/>
+                            <constraint firstItem="CS3-nn-7BO" firstAttribute="leading" secondItem="r8O-St-EJ2" secondAttribute="leading" id="cOk-Qe-TrE"/>
+                            <constraint firstAttribute="trailing" secondItem="CS3-nn-7BO" secondAttribute="trailing" id="eP5-oX-PmQ"/>
+                            <constraint firstAttribute="centerX" secondItem="Ids-bF-ZhR" secondAttribute="centerX" id="ikj-qd-gjB"/>
+                            <constraint firstItem="CS3-nn-7BO" firstAttribute="bottom" secondItem="H9k-Od-6yr" secondAttribute="top" id="qKf-KH-Ki3"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="textView" destination="9kD-aQ-jnq" id="08b-dM-0tm"/>
+                        <outlet property="scrollView" destination="CS3-nn-7BO" id="BTo-jQ-7B6"/>
+                        <outlet property="spinner" destination="Ids-bF-ZhR" id="1xY-4i-OZc"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iJW-gM-U4y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2051" y="347"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XPc-x0-tcE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YEk-CV-CYK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="njA-Ub-JDc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Lm1-eb-2gJ" kind="relationship" relationship="rootViewController" id="QkC-Ze-c17"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yyL-jb-egu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="539" y="347"/>
         </scene>
     </scenes>
 </document>
