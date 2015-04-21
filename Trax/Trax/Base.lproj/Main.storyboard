@@ -37,7 +37,9 @@
                     <connections>
                         <outlet property="mapView" destination="G1f-lF-wHC" id="3wT-55-CW5"/>
                         <segue destination="Ihr-V0-R6H" kind="show" identifier="Show Image" id="4rm-gX-Oa6"/>
-                        <segue destination="8x8-yM-Cyo" kind="presentation" identifier="Edit Waypoint" id="uuB-Uz-uIZ"/>
+                        <segue destination="Z6u-KI-Oyh" kind="popoverPresentation" popoverAnchorView="G1f-lF-wHC" id="q8J-dn-UZA">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PBx-Fq-ipC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -191,4 +193,7 @@
             <point key="canvasLocation" x="1351" y="1065"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="q8J-dn-UZA"/>
+    </inferredMetricsTieBreakers>
 </document>

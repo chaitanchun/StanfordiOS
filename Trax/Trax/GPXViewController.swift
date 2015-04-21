@@ -109,7 +109,7 @@ class GPXViewController: UIViewController, MKMapViewDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == Constants.ShowImageSegue {
             if let waypoint = (sender as? MKAnnotationView)?.annotation as? GPX.Waypoint {
-                if let ivc = segue.destinationViewController as? ImageViewController {
+                if let ivc = segue.destinationViewController.contentViewController as? ImageViewController {
                     ivc.imageURL = waypoint.imageURL
                     ivc.title = waypoint.name
                 }
@@ -117,6 +117,10 @@ class GPXViewController: UIViewController, MKMapViewDelegate {
         } else if segue.identifier == Constants.EditWaypointSegue {
             if let waypoint = (sender as? MKAnnotationView)?.annotation as? EditableWaypoint {
                 if let ewvc = segue.destinationViewController.contentViewController as? EditWaypointViewController {
+                    if let ppc = ewvc.popoverPresentationController {
+                        
+                        
+                    }
                     ewvc.waypointToEdit = waypoint
                 }
             }
