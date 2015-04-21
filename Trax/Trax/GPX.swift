@@ -140,21 +140,21 @@ class GPX: NSObject, Printable, NSXMLParserDelegate
         }
     }
 
-    func parserDidEndDocument(parser: NSXMLParser!) { succeed() }
-    func parser(parser: NSXMLParser!, parseErrorOccurred parseError: NSError!) { fail() }
-    func parser(parser: NSXMLParser!, validationErrorOccurred validationError: NSError!) { fail() }
+    func parserDidEndDocument(parser: NSXMLParser) { succeed() }
+    func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError) { fail() }
+    func parser(parser: NSXMLParser, validationErrorOccurred validationError: NSError) { fail() }
     
     private var input = ""
 
-    func parser(parser: NSXMLParser!, foundCharacters string: String!) {
-        input += string
+    func parser(parser: NSXMLParser, foundCharacters string: String?) {
+        input += string!
     }
     
     private var waypoint: Waypoint?
     private var track: Track?
     private var link: Link?
 
-    func parser(parser: NSXMLParser!, didStartElement elementName: String!, namespaceURI: String!, qualifiedName qName: String!, attributes attributeDict: [NSObject : AnyObject]!) {
+    func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [NSObject : AnyObject]) {
         switch elementName {
             case "trkseg":
                 if track == nil { fallthrough }
@@ -174,7 +174,7 @@ class GPX: NSObject, Printable, NSXMLParserDelegate
         }
     }
     
-    func parser(parser: NSXMLParser!, didEndElement elementName: String!, namespaceURI: String!, qualifiedName qName: String!) {
+    func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         switch elementName {
             case "wpt":
                 if waypoint != nil { waypoints.append(waypoint!); waypoint = nil }
