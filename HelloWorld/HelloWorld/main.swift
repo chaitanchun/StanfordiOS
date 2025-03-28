@@ -11,6 +11,7 @@ println("sdkskldfj")
 class MyClass {
     var a: Int = 0
     var b = "dskjs"
+    
 }
 
 class MyChild: MyClass {
