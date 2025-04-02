@@ -14,5 +14,5 @@ class MyClass {
 }
 
 class MyChild: MyClass {
-    var c = 1.2
+    var c = 1.3
 }
